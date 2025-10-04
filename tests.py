@@ -52,8 +52,8 @@ class TestRefactoredConversions(unittest.TestCase):
 
     def test_distance_all_pairs(self):
         cases = [
-            ("miles", "meters", 1, 1609.34),
-            ("meters", "miles", 1609.34, 1),
+            ("miles", "meters", 1, 1609.344),
+            ("meters", "miles", 1609.344, 1),
             ("yards", "meters", 1, 0.9144),
             ("meters", "yards", 1, 1.09361),
             ("miles", "yards", 1, 1760),

@@ -26,7 +26,7 @@ def convert(fromUnit: str, toUnit: str, value: float) -> float:
                 return (value - 273.15) * 9/5 + 32
     # Distance conversion (miles, yards, meters)
     distance_units = {
-        "miles": 1609.34,
+        "miles": 1609.344,
         "yards": 0.9144,
         "meters": 1.0
     }

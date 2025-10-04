@@ -12,7 +12,7 @@ class TestCelsiusConversions(unittest.TestCase):
   def test_convertCelsiusToFahrenheit(self):
     test_cases = [(0, 32), (100, 212), (-40, -40), (300, 572), (25, 77)]
     for c, expected in test_cases:
-        result = conversions.convertCelsiusToFarenheit(c)
+        result = conversions.convertCelsiusToFahrenheit(c)
         self.assertAlmostEqual(result, expected, places=2, msg=f"{c}C should be {expected}F")
 
 if __name__ == "__main__":

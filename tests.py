@@ -3,8 +3,10 @@ import conversions
 import conversions_refactored as cref
 
 class TestConversions(unittest.TestCase):
+    pass
 
 class TestRefactoredConversions(unittest.TestCase):
+    
     def test_tempature_all_pairs(self):
         cases = [
             ("celsius", "kelvin", 0, 273.15),

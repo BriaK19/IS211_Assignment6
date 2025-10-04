@@ -19,6 +19,9 @@ class TestRefactoredConversions(unittest.TestCase):
         for f, t, v, expected in cases:
             self.assertAlmostEqual(cref.convert(f, t, v), expected, places=2)
 
+if __name__ == "__main__":
+    unittest.main()
+
     def test_distance_all_pairs(self):
         cases = [
             ("miles", "meters", 1, 1609.34),

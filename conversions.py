@@ -4,7 +4,7 @@ def convertCelsiusToKelvin(celsius: float) -> float:
 def convertCelsiusToFahrenheit(celsius: float) -> float:
   return (celsius * 9/5) + 32
 
-def convertFahrenheitToCelsius(farenheit: float) -> float:
+def convertFahrenheitToCelsius(fahrenheit: float) -> float:
   return (fahrenheit - 32) * 5/9
 
 def convertFahrenheitToKelvin(fahrenheit: float) -> float:

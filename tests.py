@@ -17,3 +17,26 @@ class TestCelsiusConversions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+import conversions_refactored as cref
+
+class TestRefactoredConversions(unittest.TestCase):
+
+    def test_temperature_conversions(self):
+        self.assertAlmostEqual(cref.convert("celsius", "kelvin", 0), 273.15)
+        self.assertAlmostEqual(cref.convert("fahrenheit", "celsius", 32), 0)
+        self.assertAlmostEqual(cref.convert("kelvin", "fahrenheit", 273.15), 32)
+
+    def test_distance_conversions(self): 
+        self.assertAlmostEqual(cref.convert("miles", "meters", 1), 1609.34)
+        self.assertAlmostEqual(cref.convert("yards", "meters", 1), 0.9144)
+
+    def test_same_unit(self):
+        self.assertEqual(cref.convert("meters", "meters", 10), 10)
+        self.assertEqual(cref.convert("celsius", "celsius", 100), 100)
+
+    def test_incompatible_units(self):
+        with self.assertRaises(cref.ConversionNotPossible):
+            cref.convert("celsius", "meters", 100)
+
+

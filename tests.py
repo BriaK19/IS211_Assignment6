@@ -1,5 +1,6 @@
 import unittest
 import conversions
+import conversions_refactored as cref
 
 class TestCelsiusConversions(unittest.TestCase):
 
